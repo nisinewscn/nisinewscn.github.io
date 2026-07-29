@@ -1,0 +1,88 @@
+:root {
+  --zhi: #F7F4EC;        /* rice paper */
+  --zhi-deep: #EFEBDE;
+  --mo: #1C1C1C;         /* ink */
+  --mo-soft: #55524A;
+  --dan: #2F4A8A;        /* indigo accent */
+  --dan-soft: #6B7FAE;
+  --hui: #8A8578;        /* warm grey */
+  --xian: #DDD8C9;       /* hairline */
+  --font-song: "Noto Serif SC", "Songti SC", "SimSun", serif;
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0 auto;
+  max-width: 720px;
+  padding: 40px 22px 64px;
+  font-family: var(--font-song);
+  font-size: 17px;
+  line-height: 1.95;
+  color: var(--mo);
+  background: var(--zhi);
+}
+
+/* Masthead — vertical 逆思 */
+.masthead { display: flex; align-items: flex-start; gap: 20px; border-bottom: 1px solid var(--dan); padding-bottom: 26px; }
+.hao { text-decoration: none; }
+.hao-zi {
+  writing-mode: vertical-rl;
+  font-size: 42px; font-weight: 900; letter-spacing: 14px;
+  color: var(--dan); border-right: 1px solid var(--dan); padding-right: 14px;
+  display: inline-block; line-height: 1;
+}
+.tagline { font-size: 13px; letter-spacing: 4px; color: var(--hui); margin: 6px 0 0; flex: 1; }
+nav.zhu { align-self: flex-end; }
+nav.zhu a { color: var(--mo); text-decoration: none; margin-left: 18px; font-size: 14px; letter-spacing: 2px; }
+nav.zhu a:hover { color: var(--dan); }
+
+a { color: var(--mo); text-decoration: underline; text-decoration-color: var(--dan-soft); text-underline-offset: 4px; }
+a:hover { color: var(--dan); }
+
+h1, h2, h3 { font-weight: 700; line-height: 1.5; color: var(--mo); }
+
+/* Index list */
+.mulu { list-style: none; padding: 0; margin: 40px 0; }
+.mulu li { border-bottom: 1px solid var(--xian); padding: 22px 0; }
+.riqi { font-size: 12.5px; color: var(--hui); letter-spacing: 2px; margin: 0 0 6px; }
+.timu { font-size: 21px; font-weight: 700; margin: 0; }
+.timu a { text-decoration: none; }
+.timu a:hover { color: var(--dan); text-decoration: underline; }
+.zhaiyao { color: var(--mo-soft); font-size: 15px; margin: 8px 0 0; }
+.kong { text-align: center; color: var(--hui); padding: 48px 0; }
+
+/* Article */
+.wen-timu { font-size: 30px; margin: 44px 0 4px; }
+.wen-timu-en { color: var(--hui); font-size: 15px; font-style: italic; margin: 0 0 10px; }
+.chip { font-size: 13px; color: var(--hui); letter-spacing: 1px; }
+.chip .byline { color: var(--dan); font-weight: 700; }
+.cover { max-width: 100%; border: 1px solid var(--xian); margin: 18px 0; }
+article p { margin: 1.4em 0; }
+article blockquote { border-left: 2px solid var(--dan); margin: 1.6em 0; padding: 2px 0 2px 18px; color: var(--mo-soft); }
+
+/* Sources */
+.laiyuan { border-top: 1px solid var(--xian); margin-top: 48px; padding-top: 18px; color: var(--hui); font-size: 13px; }
+.laiyuan h2 { font-size: 13px; font-weight: 500; letter-spacing: 3px; margin: 0 0 10px; color: var(--hui); }
+.laiyuan ol { margin: 0; padding-left: 20px; }
+.laiyuan li { margin: 5px 0; }
+.laiyuan a { color: var(--hui); }
+.laiyuan a:hover { color: var(--dan); }
+
+/* English section */
+.lang-divider { border: none; border-top: 1px solid var(--dan); margin: 56px 0 18px; }
+.en { font-family: Georgia, "Times New Roman", serif; }
+.en-label { font-size: 12.5px; letter-spacing: 2px; text-transform: uppercase; color: var(--hui); }
+.en-title { font-size: 24px; }
+.en p { line-height: 1.75; }
+
+/* Footer */
+.jiao { border-top: 1px solid var(--xian); margin-top: 72px; padding-top: 20px; color: var(--hui); font-size: 13px; }
+.jiao-en { font-size: 12px; }
+
+@media (max-width: 560px) {
+  .masthead { flex-direction: column; gap: 10px; }
+  .hao-zi { writing-mode: horizontal-tb; border-right: none; border-bottom: 1px solid var(--dan); padding: 0 0 8px; letter-spacing: 10px; font-size: 34px; }
+  nav.zhu { align-self: flex-start; }
+  nav.zhu a { margin: 0 18px 0 0; }
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>逆思</title>
+    <link>https://nisinewscn.github.io/</link>
+    <atom:link href="https://nisinewscn.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <description>逆向思考的马来西亚时评</description>
+    <language>zh-cn</language>
+    
+  </channel>
+</rss>
