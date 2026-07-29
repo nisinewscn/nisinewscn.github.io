@@ -76,6 +76,17 @@ article blockquote { border-left: 2px solid var(--dan); margin: 1.6em 0; padding
 .en-title { font-size: 24px; }
 .en p { line-height: 1.75; }
 
+/* End-of-article seal 落款 */
+.luokuan { text-align: right; margin: 48px 0 0; }
+.yin {
+  display: inline-block;
+  writing-mode: vertical-rl;
+  width: 30px;
+  font-size: 22px; font-weight: 700; letter-spacing: 6px; line-height: 1;
+  color: var(--dan); border: 2px solid var(--dan);
+  padding: 8px 5px; border-radius: 2px;
+}
+
 /* Footer */
 .jiao { border-top: 1px solid var(--xian); margin-top: 72px; padding-top: 20px; color: var(--hui); font-size: 13px; }
 .jiao-en { font-size: 12px; }
