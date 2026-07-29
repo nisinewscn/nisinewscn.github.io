@@ -11,4 +11,11 @@
     <priority>0.6</priority>
   </url>
   
+  <url>
+    <loc>https://nisinewscn.github.io/wen/fakanci/</loc>
+    <lastmod>2026-07-29T07:48:24.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
 </urlset>

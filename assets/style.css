@@ -25,12 +25,12 @@ body {
 
 /* Masthead — vertical 逆思 */
 .masthead { display: flex; align-items: flex-start; gap: 20px; border-bottom: 1px solid var(--dan); padding-bottom: 26px; }
-.hao { text-decoration: none; }
+.hao { text-decoration: none; flex: 0 0 auto; display: block; width: 60px; }
 .hao-zi {
   writing-mode: vertical-rl;
   font-size: 42px; font-weight: 900; letter-spacing: 14px;
   color: var(--dan); border-right: 1px solid var(--dan); padding-right: 14px;
-  display: inline-block; line-height: 1;
+  display: block; line-height: 1; width: 43px;
 }
 .tagline { font-size: 13px; letter-spacing: 4px; color: var(--hui); margin: 6px 0 0; flex: 1; }
 nav.zhu { align-self: flex-end; }
